@@ -1,8 +1,6 @@
 import React from 'react'
 import CV_Resume from './CV_Resume.pdf'
-import Frontend from '../../assets/frontend.png'
-import Frontend_1 from '../../assets/frontend_1.png'
-import Frontend_2 from '../../assets/frontend_2.png'
+
 
 export default function Skills() {
   return (
