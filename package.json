@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://swikritigupta16.github.io/portfolio-website",
+
 
    "scripts": {
     "dev": "vite",
