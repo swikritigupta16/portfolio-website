@@ -16,6 +16,7 @@ export default function App() {
     });
   },[]);
   return (
+    <main>
     <HashRouter>
       <Routes>
       <Route path='/hero' element={<Hero />} />
@@ -25,5 +26,6 @@ export default function App() {
       <Route path='/Footer' element={<Footer />} />
     </Routes>
     </HashRouter>
+    </main>
   )
 }
