@@ -1,5 +1,5 @@
 import React, { Component, useEffect } from 'react'
-import { HashRouter, Routes, Route } from "react-router-dom";
+
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -17,18 +17,13 @@ export default function App() {
     });
   },[]);
   return (
-    
-    <HashRouter>
-      <Routes>
-
-   
-      <Route path='/' element={<Hero />} />
-      <Route path='/Skills' element={<Skills />}/>
-      <Route path='/Projects' element={<Projects />} />
-      <Route path='/Contact' element={<Contact />} />
-      <Route path='/Footer' element={<Footer />} />
-    </Routes>
-    </HashRouter>
-
+    <main>
+      <Hero />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </main>
   )
 }
+  
