@@ -9,21 +9,14 @@ export default function Contact() {
               
                 <div data-aos='fade-up' data-aos-delay='500' className='flex flex-col items-center text-xl font-bold'>
                   
-                  <div className='flex items-center space-x-2'>
-                    <svg class="h-8 w-8 text-green-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                        <path d="M15 6h6m-3 -3v6" />
-                    </svg>
-                        <span >+91 9289510435</span>
-                  </div>
+                 
                   <div className='flex items-center space-x-2'>
                   <svg class="h-8 w-8 text-red-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" />
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
                   </svg>
-                        <span >swikritigupta16@gmail.com</span>
+                        <span ><a href="mailto:swikritigupta16@gmail.com">Email ID</a></span>
                   </div>
                   <div className='flex items-center space-x-2'>
                   <svg class="h-8 w-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,7 +24,7 @@ export default function Contact() {
                         <rect x="2" y="9" width="4" height="12" />
                         <circle cx="4" cy="4" r="2" />
                   </svg>
-                        <span >https://www.linkedin.com/in/swikriti-gupta-895329207/</span>
+                        <span ><a href="https://www.linkedin.com/in/swikriti-gupta-895329207/">LinkedIn ID</a></span>
                   </div>
                 </div>
             </div>

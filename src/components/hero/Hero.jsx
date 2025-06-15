@@ -15,7 +15,7 @@ export default function Hero() {
               Hi, this is Swikriti Gupta's Portfolio
             </p>
             <p data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg text-gray-300 mb-6'>
-              A FRONT-END DEVELOPER
+              A DEVELOPER
             </p>
             
           </div>

@@ -1,52 +1,71 @@
-import React from 'react'
-import Resume from './Resume.pdf'
-
+import React from 'react';
 
 export default function Skills() {
   return (
-    <div>
-        <main id='skills' className='py-6 px-4 sm:p-6 md:py-10 md:px-8'>
-            <div className='max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2'>
-                <div data-aos='fade-up' data-aos-delay='400' className='relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1'>
-                <p className='text-lg leading-4 font-medium text-white md:text-slate-500 md:text-blue-950'>Skills</p>
-                </div>
-                <p data-aos='fade-up' data-aos-delay='700' className='mt-4 text-sm leading-5 col-start-2 sm:col-span-4 lg:mt-6 lg:row-start-2 text-blue-950 lg:col-span-2'>
-                  
-                <ul className="flex flex-wrap gap-4">
-  <div className="w-1/2">
-    <li className="p-2 bg-blue-500 text-white rounded">HTML5</li>
-    <li className="p-2 bg-blue-500 text-white rounded">CSS</li>
-    <li className="p-2 bg-blue-500 text-white rounded">JavaScript</li>
-    <li className="p-2 bg-blue-500 text-white rounded">React.js</li>
-    <li className="p-2 bg-blue-500 text-white rounded">Core JAVA</li>
-    <li className="p-2 bg-blue-500 text-white rounded">Python</li>
-  </div>
-  <div className="w-1/2">
-    
-    <li className="p-2 bg-green-500 text-white rounded">Team Player</li>
-    <li className="p-2 bg-green-500 text-white rounded">Hard Working</li>
-    <li className="p-2 bg-green-500 text-white rounded">Problem Solver</li>
-    
-  </div>
-</ul>
+    <div className="bg-gradient-to-b from-white to-blue-100 min-h-screen">
+      <main id="skills" className="py-10 px-6 sm:p-10 md:py-16 md:px-12">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
-                
-                 </p>
-                
-                
+          {/* Heading */}
+          <div 
+            data-aos="fade-up" 
+            data-aos-delay="400" 
+            className="col-span-full text-center lg:text-left"
+          >
+            <h2 className="text-3xl font-bold text-blue-950">Skills</h2>
+            <p className="text-sm text-blue-800 mt-2">
+              A snapshot of my technical and personal strengths.
+            </p>
+          </div>
 
+          {/* Technical Skills */}
+          <div className="space-y-3" data-aos="fade-right" data-aos-delay="500">
+            <h3 className="text-xl font-semibold text-blue-800 mb-2">Technical</h3>
+            <ul className="space-y-2">
+              {['HTML5', 'CSS', 'JavaScript', 'React.js', 'Core JAVA', 'Python'].map(skill => (
+                <li 
+                  key={skill} 
+                  className="bg-blue-500 text-white px-4 py-2 rounded shadow-md hover:bg-blue-600 transition"
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                
-                <div className='mt-4 md:col-start-5 md:row-start-5 self-center lg:mt-2 lg:col-start-5 lg:row-start-5 lg:row-end-7'>
-                    <a href={Resume} download>
-                        <button data-aos='fade-up' data-aos-delay='600' type='button' className='text-white bg-blue-950 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-700 font-semibold rounded-full text-xs sm:text-sm px-4 py-2 text-center'>
-                            Download Resume
-                        </button>
-                    </a>
-                </div>
-                
-            </div>
-        </main>
+          {/* Soft Skills */}
+          <div className="space-y-3" data-aos="fade-left" data-aos-delay="600">
+            <h3 className="text-xl font-semibold text-green-700 mb-2">Soft Skills</h3>
+            <ul className="space-y-2">
+              {['Team Player', 'Hard Working', 'Problem Solver','Time Management'].map(skill => (
+                <li 
+                  key={skill} 
+                  className="bg-green-500 text-white px-4 py-2 rounded shadow-md hover:bg-green-600 transition"
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resume Button */}
+          <div className="col-span-full text-center mt-8" data-aos="fade-up" data-aos-delay="700">
+            <a 
+              href="https://drive.google.com/file/d/1R2ATwgZuZF4-7VTWqh-v4HxlxKkxHICt/view?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <button 
+                type="button" 
+                className="text-white bg-blue-950 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-700 font-semibold rounded-full text-sm px-6 py-3 shadow-lg transition"
+              >
+                View Resume
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </main>
     </div>
-  )
+  );
 }
