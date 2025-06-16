@@ -11,13 +11,13 @@ export default function Navbar() {
   return (
     <header
       data-aos="fade-down"
-      className="fixed top-0 left-0 w-full bg-blue-600 shadow-md z-50"
+      className="fixed top-0 left-0 w-full bg-blue-600 shadow-md z-50 overflow-hidden"
     >
-      <div className="max-w-screen-xl mx-auto w-full px-4 py-3 flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-screen-xl mx-auto w-full px-4 py-3 flex flex-col md:flex-row items-center justify-between overflow-hidden">
         <a className="flex title-font font-medium items-center text-white mb-2 md:mb-0">
           <span className="font-bold text-2xl">Portfolio</span>
         </a>
-        <nav className="flex flex-wrap justify-center items-center space-x-4 text-base text-white">
+        <nav className="flex flex-wrap justify-center items-center gap-x-4 text-base text-white">
           {NavbarLinks.map((e) => (
             <a
               key={e.id}
