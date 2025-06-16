@@ -1,34 +1,61 @@
-import React from 'react'
-import Frontend from '../../assets/Frontend.png'
-import Frontend_1 from '../../assets/Frontend_1.png'
-import Frontend_2 from '../../assets/Frontend_2.png'
+import React from 'react';
+import Frontend from '../../assets/Frontend.png';
+import Frontend_1 from '../../assets/Frontend_1.png';
+import Frontend_2 from '../../assets/Frontend_2.png';
 
-const ProjectCard = ({ image, title, description }) => (
-  <div className='p-4 md:w-1/3 mb-6'>
-    <div className='rounded-lg h-52 overflow-hidden'>
-      <img src={image} alt="project" className='object-cover object-center h-full w-full' />
+const ProjectCard = ({ image, title, description, github, live }) => (
+  <div className="p-4 md:w-1/3 w-full">
+    <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-4 flex flex-col items-center h-full text-center">
+      <div className="rounded-xl overflow-hidden mb-4 w-full h-48">
+        <img src={image} alt="project" className="object-cover w-full h-full" />
+      </div>
+      <h2 className="text-xl font-semibold text-white mb-2">{title}</h2>
+      <p className="text-gray-200 text-sm mb-4 px-2">{description}</p>
+      <div className="flex gap-4 mt-auto">
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+        >
+          GitHub
+        </a>
+        <a
+          href={live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+        >
+          Live Demo
+        </a>
+      </div>
     </div>
-    <h2 className='text-xl font-medium title-font text-white mt-5'>{title}</h2>
-    <p className="text-gray-100 mt-1">{description}</p>
   </div>
 );
+
 
 export default function Projects() {
   const projects = [
     {
       title: 'Cov-Aid',
       image: Frontend,
-      description: 'Built using HTML, CSS, JS, Bootstrap, PHP, MySql. It connects people during crisis to share resources locally.'
+      description: 'Built using HTML, CSS, JS, Bootstrap, PHP, MySql. It connects people during crisis to share resources locally.',
+      github: 'https://github.com/swikritigupta16/cov-aid',
+      live: 'https://covaid.infinityfreeapp.com/index.php?i=2'
     },
     {
       title: 'Tasty Fusion',
       image: Frontend_1,
-      description: 'Built using MEAN Stack tech. It’s an online food ordering platform with cart and order features.'
+      description: 'Built using MEAN Stack tech. It’s an online food ordering platform with cart and order features.',
+      github: 'https://github.com/swikritigupta16/tastyFusion',
+      live: 'https://tasty-fusion.vercel.app/'
     },
     {
       title: 'Movie Recommendation System',
       image: Frontend_2,
-      description: 'Built using Machine Learning. It provides top 5 similar movie recommendations to users.'
+      description: 'Built using Machine Learning. It provides top 5 similar movie recommendations to users.',
+      github: 'https://github.com/swikritigupta16/movie-recommendation-system',
+      live: 'https://movie-recommendation-app.vercel.app/'
     }
   ];
 
