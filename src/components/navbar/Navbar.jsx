@@ -9,14 +9,21 @@ export default function Navbar() {
   ];
 
   return (
-    <header data-aos="fade-down" className="fixed top-0 left-0 w-full bg-blue-600 shadow-md z-50">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center">
-        <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-          <span className="ml-3 mr-11 font-bold text-2xl">Portfolio</span>
+    <header
+      data-aos="fade-down"
+      className="fixed top-0 left-0 w-full bg-blue-600 shadow-md z-50"
+    >
+      <div className="max-w-screen-xl mx-auto w-full px-4 py-3 flex flex-col md:flex-row items-center justify-between">
+        <a className="flex title-font font-medium items-center text-white mb-2 md:mb-0">
+          <span className="font-bold text-2xl">Portfolio</span>
         </a>
-        <nav className="md:ml-auto md:mr-auto font-medium flex flex-wrap items-center text-base text-white justify-center">
+        <nav className="flex flex-wrap justify-center items-center space-x-4 text-base text-white">
           {NavbarLinks.map((e) => (
-            <a key={e.id} href={e.link} className="mr-7 hover:text-yellow-300">
+            <a
+              key={e.id}
+              href={e.link}
+              className="hover:text-yellow-300 whitespace-nowrap"
+            >
               {e.name}
             </a>
           ))}
