@@ -55,7 +55,7 @@ export default function Projects() {
       image: Frontend_2,
       description: 'Built using Machine Learning. It provides top 5 similar movie recommendations to users.',
       github: 'https://github.com/swikritigupta16/movie-recommendation-system',
-      live: 'https://movie-recommendation-app.vercel.app/'
+      live: 'https://swikritigupta16-movie-recommendation-system-app-zo3bcy.streamlit.app/'
     }
   ];
 
