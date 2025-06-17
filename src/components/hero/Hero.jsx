@@ -18,7 +18,7 @@ export default function Hero() {
               Hi, this is Swikriti Gupta's Portfolio
             </p>
             <p data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg mb-6 text-yellow-200'>
-              A DEVELOPER | TECH ENTHUSIASTIC
+              DEVELOPER | ANALYST | TECH ENTHUSIASTIC
             </p>
             
           </div>
