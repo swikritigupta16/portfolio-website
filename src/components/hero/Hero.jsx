@@ -14,12 +14,13 @@ export default function Hero() {
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg'>
             SWIKRITI GUPTA
           </h1>
-            <p data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg text-gray-300 mb-6'>
-              Hi, this is Swikriti Gupta's Portfolio
-            </p>
-            <p data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg mb-6 text-yellow-200'>
+          <p data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg mb-6 text-yellow-200'>
               DEVELOPER | ANALYST | TECH ENTHUSIASTIC
             </p>
+            <p data-aos='fade-up' data-aos-delay='300' className='text-base sm:text-lg md:text-lg text-gray-300 mb-6'>
+              I hold an MCA from the Institute of Information Technology & Management and a BCA degree from Jagan Institute of Management Studies, Delhi. With a strong foundation in tech and a hands-on approach, I aim to contribute to impactful projects that drive innovation and real-world change.
+            </p>
+            
             
           </div>
            <div data-aos='fade-up' className='flex-1 flex justify-center md:justify-end mt-8 md:mt-0 '>
