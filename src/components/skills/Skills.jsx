@@ -51,7 +51,7 @@ export default function Skills() {
           {/* Resume Button */}
           <div className="col-span-full text-center mt-8" data-aos="fade-up" data-aos-delay="700">
             <a 
-              href="https://drive.google.com/file/d/1R2ATwgZuZF4-7VTWqh-v4HxlxKkxHICt/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1rc2BJr-WVCgFQltqobFYvDQq8Urajbsr/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
             >
