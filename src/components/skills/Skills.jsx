@@ -22,7 +22,7 @@ export default function Skills() {
           <div className="space-y-3" data-aos="fade-right" data-aos-delay="500">
             <h3 className="text-xl font-semibold text-blue-800 mb-2">Technical</h3>
             <ul className="space-y-2">
-              {['HTML5', 'CSS', 'JavaScript', 'React.js', 'Core JAVA', 'Python'].map(skill => (
+              {['Front-End Development', 'Core JAVA', 'Python', 'AI & ML (basics)', 'SQL', 'MongoDB'].map(skill => (
                 <li 
                   key={skill} 
                   className="bg-blue-500 text-white px-4 py-2 rounded shadow-md hover:bg-blue-600 transition"
