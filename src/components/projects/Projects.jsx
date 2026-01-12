@@ -44,11 +44,11 @@ export default function Projects() {
       live: 'https://covaid.infinityfreeapp.com/index.php?i=2'
     },
     {
-      title: 'Tasty Fusion',
+      title: 'Resume Builder',
       image: Frontend_1,
-      description: 'Built using MEAN Stack tech. It’s an online food ordering platform with cart and order features.',
-      github: 'https://github.com/swikritigupta16/tastyFusion',
-      live: 'https://tasty-fusion.vercel.app/'
+      description: 'A React.js-based Resume Builder enabling users to generate ATS-friendly resumes with live preview, multiple templates,section reordering,dark/light mode,and PDF export,optimized for desktop and mobile devices.',
+      github: 'https://github.com/swikritigupta16/resume-builder-frontend',
+      live: 'https://resume-builder-frontend-gold-nu.vercel.app/'
     },
     {
       title: 'Movie Recommendation System',
